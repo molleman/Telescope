@@ -1,0 +1,50 @@
+<template name="hotnessPost">
+  <div class="post-rank">
+    <div class="social-score"><img class="mt-facebook mt-share-inline-square-sm" src="//mojotech-static.s3.amazonaws.com/facebook@2x.png"><h4>{{fbCount}}</h4></div>
+    <div class="clear-new"></div>
+    <div class="social-score"><img class="mt-twitter mt-share-inline-square-sm" src="//mojotech-static.s3.amazonaws.com/twitter@2x.png"><h4>{{tweetCount}}</h4></div>
+    <div class="hotness">
+      <span>{{roundDown}}</span>
+      <br/>
+      hotness
+    </div>
+
+
+  </div>
+</template>
+
+<template name="customBeforeDay">
+<div>
+
+</div>
+
+</template>
+
+<template name='firstpost'>
+  <div class="grid">
+    <h1 class="tagline"><span>Daily, The hottest shared stories in MMA.</span></h1>
+        {{#each posts}}
+          {{> heroItem}}
+        {{/each}}
+
+  </div>
+</template>
+
+<template name="heroItem">
+  <div class="hero-image">
+    {{#if showHero}}
+      <img src="{{heroImageUrl}}" />
+      {{#if url}}<span class="post-domain">{{domain}}</span>{{/if}}
+      <h2 class="hero-image-text"><a target="postTarget" href="{{postLink}}"><span>{{title}}</span></a></h2>
+    {{/if}}
+  </div>
+</template>
+
+<template name="heroItem-old">
+
+  <div class="hero-image">
+    <img src="{{heroImageUrl}}" />
+    {{#if url}}<span class="post-domain">{{domain}}</span>{{/if}}
+    <h2 class="hero-image-text"><a target="postTarget" href="{{postLink}}"><span>{{title}}</span></a></h2>
+  </div>
+</template>

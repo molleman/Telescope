@@ -1,0 +1,141 @@
+body {
+
+}
+.post .hotness-post{
+  flex-grow: 1;
+  margin-right:20px;
+}
+
+.post .post-share {
+  display: block;
+  position: relative;
+}
+
+
+  .share-options {
+    left: -195px;
+    top: -6px;
+  }
+  @media screen and (max-width: 30em){
+  .post .post-share {
+    display: none;
+  }
+}
+
+.hotness{
+  margin-top: 55%;
+}
+.hotness > span{
+  font-weight: bold;
+  line-height: 1;
+  font-size: 20px;
+  color:#E84408;
+}
+.post-rank{
+  text-align:center;
+}
+
+img.mt-share-inline-square-sm {
+  width: 25px;
+  height: auto;
+  border: 0px;
+  float:left;
+}
+
+.social-score{
+  width: 100%;
+  padding: 5px;
+}
+.social-score span{
+  margin-bottom:-5px;
+}
+.social-score h4{
+  float:right;
+}
+
+.clear-new{
+  clear:both;
+}
+
+
+.tagline {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+
+.tagline span {
+  position: relative;
+  display: inline-block;
+  background: #EEEEEE;
+  margin: 0 auto;
+  z-index: 100;
+  padding: 0 15px;
+  letter-spacing: .3px;
+}
+
+.tagline:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 50%;
+  left: 0px;
+  height: 1px;
+  background: rgba(0,0,0,0.2);
+  width: 100%;
+  z-index: 10;
+}
+.post-thumbnail-image {
+  width: 90%;
+}
+.post-thumbnail-link{
+  width: 100%;
+}
+.post {
+  padding: 18px 0px 18px 10px;
+
+}
+
+.post .post-info{
+  margin-bottom: 100px;
+}
+
+
+.post.hero-post{
+  padding: 10px;
+}
+.hero-image {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+
+h2.hero-image-text {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  width: 100%;
+}
+
+h2.hero-image-text a span {
+  color: white;
+  letter-spacing: 0px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  display: inline-block;
+}
+
+.hero-image span.post-domain{
+  top: 10px;
+  padding: 10px;
+  left:0;
+  color:white;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  position:absolute;
+}

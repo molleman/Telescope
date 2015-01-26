@@ -1,4 +1,4 @@
 postModules.push({
-  template: 'postShare', 
+  template: 'postShare',
   order: 25
 });

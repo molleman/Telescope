@@ -1,6 +1,6 @@
 // see https://www.discovermeteor.com/blog/template-level-subscriptions/
 
-// this template acts as the controller that sets and 
+// this template acts as the controller that sets and
 // manages the reactive context for the embedded postsList template
 
 Template[getTemplate('singleDay')].created = function () {
@@ -56,10 +56,10 @@ Template[getTemplate('singleDay')].created = function () {
       instance.postsReady.set(true);
 
     } else {
-      
+
       instance.postsReady.set(false);
       // console.log("> Subscription is not ready yet. \n\n");
-    
+
     }
   });
 
