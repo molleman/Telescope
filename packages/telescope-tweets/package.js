@@ -36,8 +36,11 @@ Package.onUse(function (api) {
         'lib/client/templates/custom_hotness_post.html',
         'lib/client/templates/custom_hotness_post.js',
         'lib/client/templates/custom_blank.html',
+        'lib/client/templates/custom_post_content.html',
+        'lib/client/templates/custom_post_content.js',
         'lib/client/bxslider/jquery.bxslider.min.js',
-        'lib/client/bxslider/jquery.bxslider.css'
+        'lib/client/bxslider/jquery.bxslider.css',
+        'lib/client/share-button/share.min.js'
         ], ['client']);
 
         // server

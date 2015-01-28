@@ -7,8 +7,8 @@ Meteor.startup(function () {
         return parser.text('every 10 minutes');
       },
       job: function() {
-        getPostsTweetCount(50);
-        getPostsFacebookCount(50);
+        getPostsTweetCount(75);
+        getPostsFacebookCount(75);
       }
     });
   //}

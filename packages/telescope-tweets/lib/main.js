@@ -76,11 +76,20 @@ templates["submitButton"]  ="customSubmitButton";
 
 templates["viewsMenu"] = "customViewsMenu";
 
-postModules.push({
-  template: 'hotnessPost',
-  position: 'left-left'
-});
+templates["userPosts"] = "customUserPosts";
 
+templates["userUpvotedPosts"] = "customUserUpvotedPosts";
+
+templates["userDownvotedPosts"] = "customUserDownvotedPosts";
+
+templates["postContent"] = "customPostContent";
+
+
+/*postModules.push({
+  template: 'hotnessPost',
+  position: 'center-right'
+});
+*/
 
 
 
@@ -115,6 +124,10 @@ heroModules.push({
   template: 'firstpost',
   order: 1
 });
+/*heroModules.push({
+  template: 'share-button',
+  order: 2
+});*/
 // remove upvote post module
 postModules = _.reject(postModules, function (item){
 

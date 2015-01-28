@@ -5,8 +5,6 @@ Meteor.startup(function () {
     }
   });
 
-
-
   Template[getTemplate('firstpost')].helpers({
     posts: function () {
       posts = Posts.find({}, {limit:1, sort: {sticky: -1, hotness: -1}});
@@ -31,7 +29,7 @@ Meteor.startup(function () {
     },
     showHero:function(){
       var currentTemplate = getCurrentTemplate();
-      if(currentTemplate == undefined) {
+      if(typeof getCurrentTemplate === "function") {
         return true;
       }
       else if(currentTemplate == "singleDay"){
@@ -53,5 +51,16 @@ Meteor.startup(function () {
       return !!this.url ? '_blank' : '';
     }
   });
+
+  Template[getTemplate('share-button')].rendered = function(){
+    new Share(".share-button", {
+      networks: {
+        facebook: {
+          url: "http://www.google.com"
+        }
+      }
+    });
+
+  };
 
 });
